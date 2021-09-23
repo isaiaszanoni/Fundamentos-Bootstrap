@@ -11,8 +11,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 <!--Menu -->
+<body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
         <div class="container-fluid">
           <a class="navbar-brand text-info" href="index.html">Bootstrap</a>
@@ -48,83 +48,158 @@
           </div>
         </div>
       </nav>
-<!-- /Menu -->
 
-<!--Grid-->
-    <div class="container">
+    <!--Carousel-->
 
-        <div class="row mt-5 d-flex justify-content-center">
-
-            <div class="col-md-4 p-0">
-                <div class="bg-danger">4 Colunas</div>
-            </div>
-
-            <div class="col-md-4 p-0">
-                <div class="bg-warning">4 Colunas</div>
-            </div>
-
-            <div class="col-md-4 p-0">
-                <div class="bg-info">4 Colunas</div>
-            </div>
-
-        </div>
-
-
-
-        <div class="row mt-5 d-flex justify-content-center">
-
-          <div class="col-md-6 p-0">
-              <div class="bg-danger">Colunas 6</div>
-          </div>
-
-          <div class="col-md-6 p-0">
-              <div class="bg-warning">Colunas 6</div>
-          </div>
-
-        </div>
-
-        <div class="row mt-5 d-flex justify-content-center">
-
-          <div class="col-md-8 p-0">
-              <div class="bg-danger">Colunas 8</div>
-          </div>
-
-          <div class="col-md-4 p-0">
-              <div class="bg-warning">Colunas 4</div>
-          </div>
-          
-
-        </div>
-
-      <!--Número total ímpar de colunas (11)-->
-      <div class="row mt-5 d-flex justify-content-center">
-
-          <div class="col-md-6 p-0">
-              <div class="bg-danger">Colunas 6</div>
-          </div>
-
-          <div class="col-md-5 p-0">
-              <div class="bg-warning">Colunas 5</div>
-          </div>
+    <div id="carouselExampleCaptions" class="carousel slide w-50 m-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
       
-      </div>
-
-      </div>
-
-        
-
     </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/arduino1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Primeiros Passos com Arduino e Cultura Maker</h5>
+            <p>Introdução sobre arduino e cultura maker!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/python.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Minha Trajetória Aprendendo Python</h5>
+            <p>Python como primeira linguagem? Pros e contras</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/setup.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Montando meu Setup</h5>
+            <p>Dicas para montar um Setup de Baixa Renda do jeito que a gente sonha</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/mysql-datacenter.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Banco de Dados com MySQL</h5>
+            <p>Um pouco sobre modelo relacional</p>
+          </div>
+        </div>
+    
+        <div class="carousel-item">
+          <img src="assets/img/arduino2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Qual kit arduino comprar?</h5>
+            <p>Principais componentes, lojas, kits para iniciar com seus projetos Arduino</p>
+          </div>
+        </div>
+    </div>
+  
+  <div>
+      <button class="carousel-control-prev bg-dark bg-gradient bg-opacity-10" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon btn-outline-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next bg-dark bg-gradient bg-opacity-10" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon btn-outline-dark btn" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  </div>
+  <!--/Carousel-->
+
+  <!--Newslatter-->
+  <div class="card">
+    <div class="card-body bg-secondary bg-opacity-25">
+      <h2>Newslatter</h2>
+      <p>
+        Deixe o seu email para se inscrever em nossa newsletter e
+        fique por dentro de todas as postagens do blog!
+      </p>
+      <input type="text" class="w-25 border-1">
+      <input type="button" value="Cadastre-se!" class="border-1 btn-outline-dark">
+    </div>
+  <!--/Newslatter-->
+
+<!--Cards com ultimos textos-->
+<div class="container mt-5">
+    <div class="card-group">
+      <div class="card p-2">
+        <img src="assets/img/arduino1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Primeiros Passos com Arduino e a Cultura Maker</h5>
+          <p class="card-text">O meu primeiro contato com arduíno foi na faculdade de Análise e Desenvolvimento...</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card p-2">
+        <img src="assets/img/python.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Minha Trajetória Aprendendo Python</h5>
+          <p class="card-text">O python tem ganhado força pela sua simplicidade e poder, sendo notado pelo MIT...</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 weeks ago</small></p>
+        </div>
+      </div>
+      <div class="card p-2">
+        <img src="assets/img/setup.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Montando um Setup Baixa Renda</h5>
+          <p class="card-text">Estamos em 2021, e a situação econômica do país não é nada fácil. A rotina home...</p>
+          <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
+        </div>
+      </div>
+    </div>
+
+  
+<div class=" row mt-5 mb-5 pt-2 pb-3  bg-black bg-opacity-75 text-light">
+  <div class="col-md-4">
+    <h2 class="p-4">Qual É a Boa?</h2>
+    <p class="card-text"><small class="text-muted">Last updated 10 days ago</small></p>
+    <p class="text-light"> Nesta semana, indico este vídeo da Julia Labs, uma cientista da computação
+      incrível, que tá sempre desenvolvendo projetos juntos à comunidade. 
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8VpTBD3FMwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+</div>
     
 
-<!--/Grid-->
+</div>
+<footer>
+  <div class=" bg-secondary" >
+    <div class="col-md-12 d-flex justify-content-center">
+      
+      <a href="#" target="_blank" rel="github de isaias" class="p-3">
+        <img class="" style="width: 42px;" src="assets/img/github.png" alt="">
+      </a>
+      <a href="#" target="_blank" rel="github de isaias" class="p-3">
+        <img src="assets/img/linkedin.png" alt="" style="width: 42px;"    
+      </a>
+      <a href="#" target="_blank" rel="github de isaias" class="p-3">
+        <img src="assets/img/instagram.png" alt="" style="width: 42px;">
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">
+          Desenvolvido por Isaias Rodrigues
+        </p>
+      </div>
+    </div>
+  </div>
+  </footer>
 
 
+  <!--Script JS do bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 
-
-
-    <!--Script JS do bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
